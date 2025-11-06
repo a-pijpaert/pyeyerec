@@ -19,15 +19,14 @@ Complete installation instructions for eyerec Python bindings on various systems
 If you already have CMake, a C++ compiler, and Python development headers installed:
 
 ```bash
-# Replace YOUR_USERNAME with your GitHub username or the fork location
-pip install git+https://github.com/YOUR_USERNAME/eyerec.git
+pip install git+https://github.com/a-pijpaert/eyerec.git
 ```
 
 Or from source:
 
 ```bash
 # Clone your fork (not the original tcsantini repo)
-git clone https://github.com/YOUR_USERNAME/eyerec.git
+git clone https://github.com/a-pijpaert/eyerec.git
 cd eyerec
 pip install .
 ```
@@ -44,11 +43,11 @@ sudo apt install -y python3-dev python3-pip cmake g++ libopencv-dev
 # Install Python dependencies
 pip3 install numpy opencv-python pybind11
 
-# Install eyerec from YOUR fork (replace YOUR_USERNAME with your GitHub username)
-pip3 install git+https://github.com/YOUR_USERNAME/eyerec.git
+# Install eyerec from YOUR fork (replace a-pijpaert with your GitHub username)
+pip3 install git+https://github.com/a-pijpaert/eyerec.git
 
 # Or from source:
-git clone https://github.com/YOUR_USERNAME/eyerec.git
+git clone https://github.com/a-pijpaert/eyerec.git
 cd eyerec
 pip3 install .
 ```
@@ -73,10 +72,10 @@ brew install cmake opencv python3
 pip3 install numpy opencv-python pybind11
 
 # Install eyerec from YOUR fork
-pip3 install git+https://github.com/YOUR_USERNAME/eyerec.git
+pip3 install git+https://github.com/a-pijpaert/eyerec.git
 
 # Or from source:
-git clone https://github.com/YOUR_USERNAME/eyerec.git
+git clone https://github.com/a-pijpaert/eyerec.git
 cd eyerec
 pip3 install .
 ```
@@ -86,7 +85,7 @@ pip3 install .
 ```bash
 sudo port install cmake opencv python310
 pip3 install numpy opencv-python pybind11
-pip3 install git+https://github.com/YOUR_USERNAME/eyerec.git
+pip3 install git+https://github.com/a-pijpaert/eyerec.git
 ```
 
 ### Windows
@@ -103,10 +102,10 @@ pip3 install git+https://github.com/YOUR_USERNAME/eyerec.git
 pip install numpy opencv-python pybind11
 
 # Install eyerec from YOUR fork
-pip install git+https://github.com/YOUR_USERNAME/eyerec.git
+pip install git+https://github.com/a-pijpaert/eyerec.git
 
 # Or from source:
-git clone https://github.com/YOUR_USERNAME/eyerec.git
+git clone https://github.com/a-pijpaert/eyerec.git
 cd eyerec
 pip install .
 ```
@@ -127,7 +126,7 @@ source eyerec_env/bin/activate  # Linux/macOS
 eyerec_env\Scripts\activate     # Windows
 
 # Install eyerec from your fork
-pip install git+https://github.com/YOUR_USERNAME/eyerec.git
+pip install git+https://github.com/a-pijpaert/eyerec.git
 ```
 
 ## Verification
@@ -242,7 +241,7 @@ pip install --no-cache-dir --force-reinstall pyeyerec
 If you want to build manually:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/eyerec.git
+git clone https://github.com/a-pijpaert/eyerec.git
 cd eyerec
 mkdir build && cd build
 
@@ -263,7 +262,7 @@ export PYTHONPATH=$(pwd)/python:$PYTHONPATH
 
 If you encounter issues not covered here:
 
-1. Check the [GitHub Issues](https://github.com/YOUR_USERNAME/eyerec/issues)
+1. Check the [GitHub Issues](https://github.com/a-pijpaert/eyerec/issues)
 2. Provide your system info:
    ```bash
    python3 --version
