@@ -1,0 +1,17 @@
+include README.md
+include LICENSE.md
+include CMakeLists.txt
+include CITE.me
+include references.bib
+
+recursive-include cpp *.cpp *.hpp *.h *.txt *.cmake *.in
+recursive-include resources *
+
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude *.o
+prune build
+prune .venv
+prune .git

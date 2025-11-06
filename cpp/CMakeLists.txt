@@ -30,6 +30,9 @@ add_library(eyerec
 # Alias so it can be used within the build tree
 add_library(${NAMESPACE}eyerec ALIAS eyerec)
 
+# Enable position-independent code for shared library compatibility
+set_target_properties(eyerec PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
 # Public headers
 target_include_directories(eyerec
         PUBLIC
@@ -95,3 +98,12 @@ install(
         FILES "${PACKAGE_CONFIG}" "${PACKAGE_CONFIG_VERSION}"
         DESTINATION "${CONFIG_INSTALL_DIR}"
 )
+
+################################################################################
+# Python Bindings (Optional)
+################################################################################
+
+option(BUILD_PYTHON_BINDINGS "Build Python bindings using pybind11" OFF)
+if(BUILD_PYTHON_BINDINGS)
+    add_subdirectory(python)
+endif()

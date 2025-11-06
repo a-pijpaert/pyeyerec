@@ -1,0 +1,47 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "pybind11>=2.6.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyeyerec"
+version = "0.1.0"
+description = "Python bindings for eyerec - Real-time pupil detection and tracking (PuRe & PuReST algorithms by Santini et al.)"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Thiago Santini"},
+]
+maintainers = [
+    {name = "Arthur Pijpaert"},
+]
+keywords = ["eye-tracking", "pupil-detection", "computer-vision", "opencv", "pure", "purest"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: C++",
+]
+
+dependencies = [
+    "numpy>=1.15",
+    "opencv-python>=3.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/tcsantini/eyerec"
+"Original C++ Repository" = "https://github.com/tcsantini/eyerec"
+Documentation = "https://github.com/tcsantini/eyerec#readme"
